@@ -4,11 +4,6 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class TxtIOUtil {
-
-
-
-
-
     public static String readTxt(String txtPath) {
         String str = "";
         String strLine;
@@ -50,9 +45,6 @@ public class TxtIOUtil {
             e.printStackTrace();
         }
     }
-
-
-
     }
 
 

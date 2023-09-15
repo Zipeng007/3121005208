@@ -4,7 +4,7 @@ package Util;
 public class HammingUtils {
 
 
-//    输入两个simHash值，计算它们的海明距离
+//    通过输入两个simHash值，计算海明距离
 
     public static int getHammingDistance(String simHash1, String simHash2) {
         int distance = 0;
@@ -23,7 +23,7 @@ public class HammingUtils {
     }
 
 
-//      输入两个simHash值，输出相似度
+//      输出两个simHash值的相似度
     public static double getSimilarity(String simHash1, String simHash2) {
         // 通过 simHash1 和 simHash2 获得它们的海明距离
         int distance = getHammingDistance(simHash1, simHash2);
