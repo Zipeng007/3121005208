@@ -13,7 +13,7 @@ public class Test {
         str[3] = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_1.txt");
         str[4] = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_10.txt");
         str[5] = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_15.txt");
-        String ansFileName = "D:/test/ansAll.txt";
+        String ansFileName = "D:/test/ans.txt";
         for(int i = 0; i <= 5; i++){
             double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str[0]), SimHashUtils.getSimHash(str[i]));
             TxtIOUtil.writeTxt(ans, ansFileName);
@@ -24,7 +24,7 @@ public class Test {
     public void test1(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig.txt");
-        String ansFileName = "D:/test/test1.txt";
+        String ansFileName = "D:/test/ans1.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans, ansFileName);
     }
@@ -33,7 +33,7 @@ public class Test {
     public void test2(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig_0.8_add.txt");
-        String ansFileName = "D:/test/test2.txt";
+        String ansFileName = "D:/test/ans2.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans, ansFileName);
     }
@@ -42,7 +42,7 @@ public class Test {
     public void test3(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig_0.8_del.txt");
-        String ansFileName = "D:/test/test3.txt";
+        String ansFileName = "D:/test/ans3.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans, ansFileName);
     }
@@ -51,7 +51,7 @@ public class Test {
     public void test4(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_1.txt");
-        String ansFileName = "D:/test/test4.txt";
+        String ansFileName = "D:/test/ans4.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans, ansFileName);
     }
@@ -60,7 +60,7 @@ public class Test {
     public void test5(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_10.txt");
-        String ansFileName = "D:/test/test5.txt";
+        String ansFileName = "D:/test/ans5.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans, ansFileName);
     }
@@ -69,7 +69,7 @@ public class Test {
     public void test6(){
         String str0 = TxtIOUtil.readTxt("D:/test/orig.txt");
         String str1 = TxtIOUtil.readTxt("D:/test/orig_0.8_dis_15.txt");
-        String ansFileName = "D:/test/test6.txt";
+        String ansFileName = "D:/test/ans6.txt";
         double ans = HammingUtils.getSimilarity(SimHashUtils.getSimHash(str0), SimHashUtils.getSimHash(str1));
         TxtIOUtil.writeTxt(ans,ansFileName);
     }
